@@ -9,57 +9,6 @@ body {
   font-size: 1rem;
 }
 
-.home-div {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  width: 100%;
-
-}
-
-.home-item {
-  margin-top: 50px;
-}
-
-.what-I-do {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-}
-
-.what-item {
-  margin-top: 10px;
-  margin-left: 100px;
-  width: 100%;
-
-}
-
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
-
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#welcome-section {
-  height: 100vh;
-}
-
 .hamburger{
   display: none;
 }
@@ -70,11 +19,11 @@ nav {
   width: 100%;
   height: 7%;
   top: 0px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   left: 0px;
   padding: 10px 20px;
-
+  margin-bottom: 10rem;
 }
 
 nav>ul {
@@ -102,7 +51,7 @@ nav>a:last-child:hover {
 
 }
 
-nav>ul>li {
+nav> ul> li {
   list-style-type: none;
   margin: 5px;
   padding: 10px 20px;
@@ -128,24 +77,64 @@ li a:active {
   background-color: grey;
   color: black;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 25px;
 
 }
 
 .home-div {
   display: flex;
- 
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 20rem;
+  margin-bottom: 1.5rem;
   width: 100%;
   padding: 0.1rem;
-
 }
-
 .home-text {
   max-width: 50%;
+}
+.home-item {
+  margin-top: 10rem;
+}
+.what-item {
+  margin-top: 1rem;
+  margin-left: 10rem;
+  width: 30%;
+  padding: 3rem 4rem;
+  height: 15rem;
+}
+.what-paragraph{
+  font-size: 1.5rem;
+}
+.what-heading{
+  font-size: 2.0rem;
+}
 
+.what-i-do {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  /*border: 1px solid red;*/
+  width: 80%;
+}
+.what-item,
+.what-paragraph {
+  background-color: rgb(214, 59, 188);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 5em;
+  padding: 2px 2px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px auto;
+}
+
+#welcome-section {
+  height: 100vh;
 }
 
 .home-image {
@@ -162,8 +151,6 @@ li a:active {
     margin: 0 auto;
   }
   
-
-
 .about {
   font-style: italic;
   font-size: medium;
@@ -172,15 +159,13 @@ li a:active {
 p {
   color: black(214, 59, 188);
   font-family: Arial, sans-serif;
-
 }
-
 
 .btn {
   background-color: rgb(214, 59, 188);
-  padding: 15px 50px;
+  padding: 1.5rem 5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 5rem;
   color: #fff;
   font-weight: bold;
 }
@@ -196,39 +181,8 @@ p {
   font-weight: bolder;
   font-style: normal;
   color: rgb(214, 59, 188);
-  font-size: 35px;
+  font-size: 3.5rem;
 
-}
-
-.what-i-do {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 2rem auto;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  border: 1px solid red;
-  width: 80%;
-}
-
-
-
-.what-item,
-.what-paragraph {
-  background-color: rgb(214, 59, 188);
-  color: #ffffff;
-  text-align: center;
-  box-shadow: 5em;
-  padding: 2px 2px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px auto;
-}
-
-.what-heading {
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 5px;
 }
 
 .section-head {
@@ -236,11 +190,9 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 3.0rem;
   color: rgb(214, 59, 188);
 }
-
-
 .project-section {
   display: flex;
   flex-direction: row;
@@ -258,16 +210,16 @@ p {
 
 footer {
   background-color: rgb(214, 59, 188);
+  width: 100%;
+  left: 0;
 }
 
 label {
   padding: 10px;
   color: White;
-  font-size: 1rem;
+  font-size: 1.6rem;
   align-items: center;
   margin-bottom: 25px;
-
-
 }
 
 .contact-section {
@@ -278,20 +230,20 @@ label {
 }
 
 .contact-item {
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 600px;
 
 }
 
 .card {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -313,7 +265,7 @@ textarea {
 
 textarea {
   border: none;
-  width:
+  
 }
 
 #message {
@@ -371,20 +323,8 @@ textarea {
   margin: 0.2px 1px;
   font-size: 20px;
   width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0.2px 1px;
+  
 }
-
-.What-I-do {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  background-blend-mode: lightpink;
-
-}
-
 .tools-section {
   margin-left: 100px;
 }
@@ -420,6 +360,7 @@ textarea {
   text-align: center;
   margin-top: 70px;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 
 /* #skills*/
@@ -537,7 +478,20 @@ h3 {
 }
 
 /*media queries*/
+
 /* */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media only screen and (max-width: 768px) {
   .hamburger{
     display: block;
@@ -546,6 +500,7 @@ h3 {
         display: none;    
   }
   .what-i-do {
+      display: flex;
       flex-wrap: wrap;
 
           }

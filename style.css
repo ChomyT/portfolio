@@ -474,7 +474,6 @@ body {
   
   background-color: #fff;
   max-width: 100%;
-  min-width: 100%;
   font-size: 1rem;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll; /* Hide vertical scrollbar */
@@ -489,12 +488,12 @@ body {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
         }
   .what-item {
-    max-width: 100%;
     min-width: 100%;
+    margin: 1rem auto;
+       
   }
   .home-div {
     flex-direction: row-reverse;
@@ -503,7 +502,7 @@ body {
     margin-top: 5rem;
     width: 100%;
     padding: 5rem;
-    gap: 1git rem;
+    gap: 1rem;
   }
 
   .home-text {

@@ -493,6 +493,7 @@ body {
   .what-item {
     min-width: 100%;
     margin: 1rem auto;
+    align-items: center;
        
   }
   .home-div {

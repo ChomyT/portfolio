@@ -14,6 +14,7 @@ body {
 
 .hamburger {
   display: none;
+  color: white;
 }
 nav {
   background-color: rgb(214, 59, 188);
@@ -81,11 +82,13 @@ li a:active {
   border-radius: 5px;
   margin-top: 25px;
 }
-
+.nav-logo{
+  font-style: italic;
+  font-size: 3rem;
+}
 .home-div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 10rem;
   margin-bottom: 1rem;
@@ -274,6 +277,7 @@ textarea {
   color: white;
 }
 
+
 .fa-twitter {
   background-color: #3b5998;
   color: white;
@@ -308,6 +312,7 @@ textarea {
   font-size: 20px;
   width: 20px;
 }
+
 .tools-section {
   margin-left: 100px;
 }
@@ -418,10 +423,8 @@ h3 {
     width: 0%;
   }
 
-  100% {
-    width: 90%;
+  100%     width: 90%;
   }
-}
 
 @keyframes css {
   0% {
@@ -473,13 +476,14 @@ h3 {
 body {
   
   background-color: #fff;
-  max-width: 100%;
+  width: 100%;
   font-size: 1rem;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll; /* Hide vertical scrollbar */
 }
   .hamburger {
     display: block;
+    color: #fff;
   }
   .nav-menu {
     display: none;
@@ -491,7 +495,7 @@ body {
     width: 100%;
         }
   .what-item {
-    min-width: 100%;
+    max-width: 100%;
     margin: 1rem auto;
     align-items: center;
        
@@ -521,8 +525,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-}
-
+  
 @media only screen and (min-width: 480px) {
   body {
   
@@ -534,6 +537,7 @@ body {
   }
     .hamburger {
       display: block;
+      color: #fff;
     }
     .nav-menu {
       display: none;
@@ -570,7 +574,9 @@ body {
       margin: 2.5rem auto;
   
     }
-  }
+}
+
+  
 /*@media only screen and (min-width: 556px) {
 
 }*/
@@ -580,5 +586,6 @@ body {
 
 }
 @media only screen and (min-width: 1200px) {
+
 
 }*/

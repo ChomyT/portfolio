@@ -474,12 +474,7 @@ h3 {
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html {
-  font-size: 62.5%;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
+
 @media only screen and (max-width: 768px) {
   
 body {
@@ -487,7 +482,7 @@ body {
   background-color: #fff;
   width: 100%;
   font-size: 1rem;
-  overflow-x: no-scroll; /* Hide horizontal scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll; /* Hide vertical scrollbar */
 }
   .hamburger {
@@ -584,56 +579,7 @@ body {
   
     }
 }
-@media only screen and (min-width: 285px) {
-  body {
-  
-    background-color: #fff;
-    width: 100%;
-    font-size: 1rem;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll; /* Hide vertical scrollbar */
-  }
-    .hamburger {
-      display: block;
-      color: #fff;
-    }
-    .nav-menu {
-      display: none;
-    }
-    .what-i-do {
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      width: 100%;
-          }
-    .what-item {
-      min-width: 100%;
-      margin: 0.5rem;
-      
-    }
-    .home-div {
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin-top: 5rem;
-      width: 100%;
-      padding: 5rem;
-      gap: 1git rem;
-    }
-  
-    .home-text {
-      min-width: 100%;
-      text-align: center;
-      margin: 0 auto;
-    }
-  
-    .home-image {
-      min-width: 100%;
-      border-radius: 50%;
-      margin: 2.5rem auto;
-  
-    }
-}
+
   
 /*@media only screen and (min-width: 556px) {
 

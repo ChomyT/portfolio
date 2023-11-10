@@ -523,15 +523,14 @@ body {
   .home-text {
     min-width: 100%;
     text-align: center;
-    overflow-x: hidden;
+    
   }
 
   .home-image {
     min-width: 100%;
     border-radius: 50%;
     margin: 0 auto;
-    overflow-x: hidden;
-
+    
   }
 }
 

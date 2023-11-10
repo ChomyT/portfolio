@@ -502,7 +502,7 @@ body {
     flex-direction: row-reverse;
     justify-content: space-evenly;
     width: 100%;
-    overflow-x:hidden;
+   
         }
   .what-item {
     max-width: 100%;

@@ -18,15 +18,15 @@ body {
   color: white;
 }
 nav {
-  background-color: rgb(214, 59, 188);
+  background-color: rgb(59, 108, 214);
   display: flex;
   position: fixed;
   width: 100%;
-  height: 10%;
-  top: 0px;
+  /* height: 10%; */
+  /* top: 0px; */
   justify-content: space-evenly;
   align-items: center;
-  left: 0px;
+  /* left: 0px; */
   padding: 10px 20px;
   margin-bottom: 10rem;
 }
@@ -34,8 +34,8 @@ nav {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  height: 100%;
+  /* flex-direction: row; */
+  /* height: 100%; */
   padding-inline-start: 0px;
   margin-block: 0px;
   /*setting the margin at the beginning of the menu item*/
@@ -90,7 +90,7 @@ li a:active {
 }
 .home-div {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-evenly;
   margin-top: 10rem;
   margin-bottom: 1rem;
@@ -107,6 +107,7 @@ li a:active {
   margin: 0 auto;
   }
 
+  /* Apply the css to the div of the image and use % instead of px */
 #profile-pix {
   display: block;
   width: 300px;
@@ -116,17 +117,16 @@ li a:active {
 
 .what-i-do {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   margin: 1rem auto;
-  box-shadow: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(202, 144, 144, 0.6);
   /*border: 1px solid red;*/
   width: 90%;
 }
 
 .what-item {
-  background-color: rgb(214, 59, 188);
-  color: #ffffff;
+  background-color:rgb(150, 180, 245);
+  color: #333;
   text-align: center;
   box-shadow: 5em;
   padding: 1rem 1rem;
@@ -148,6 +148,10 @@ li a:active {
 .about {
   font-style: italic;
   font-size: medium;
+  font-family: monserrat;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -156,12 +160,13 @@ p {
 }
 
 .btn {
-  background-color: rgb(214, 59, 188);
+  background-color: rgb(59, 108, 214);
   padding: 1.5rem 5rem;
   border: none;
-  border-radius: 5rem;
+  border-radius: 3rem;
   color: #fff;
   font-weight: bold;
+  margin: 1.5rem;
 }
 
 .work-button:hover {
@@ -170,11 +175,13 @@ p {
 }
 
 .heading2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: montserrat;
   font-weight: bolder;
   font-style: normal;
-  color: rgb(214, 59, 188);
+  color: rgb(59, 108, 214);
+  display: flex;
   font-size: 3.5rem;
+  margin: 1rem;
 }
 
 .section-head {
@@ -183,11 +190,11 @@ p {
   margin-bottom: 10px;
   font-weight: bolder;
   font-size: 3rem;
-  color: rgb(214, 59, 188);
+  color: rgb(59, 108, 214);
+  
 }
 .project-section {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 1rem;
@@ -200,9 +207,10 @@ p {
   margin-bottom: 5px;
   font-weight: bolder;
 }*/
-
+/* We will continue from here tomorrow  */
 footer {
-  background-color: rgb(214, 59, 188);
+  background-color: rgb(59, 108, 214);
+  display: flex;
   width: 100%;
   left: 0;
 }
@@ -269,7 +277,8 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 6px;
-  background-color: rgb(214, 59, 188);
+  background-color: rgb(59, 108, 214);
+  display: flex;
   color: white;
   border-radius: 4px;
   border: none;
@@ -358,7 +367,7 @@ textarea {
 }
 
 h3 {
-  margin: 5px;
+  margin: 10px;
 }
 
 .skill {
@@ -475,8 +484,26 @@ h3 {
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*for tablets*/
 @media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #333;
+    }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul{
+    width: 100%;
+    height: 350%;
+    background:#333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 2;
+  }
   
 body {
   
@@ -487,9 +514,7 @@ body {
     display: block;
     color: #fff;
   }
-  .nav-menu {
-    display: none;
-  }
+  
   .what-i-do {
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -501,7 +526,7 @@ body {
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    
+        
   }
   .home-div {
     flex-wrap: wrap;
@@ -527,7 +552,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 576px) {
+/*@media only screen and (max-width: 576px) {*/
   
 @media only screen and (max-width: 450px) {
   

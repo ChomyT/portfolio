@@ -12,15 +12,17 @@
 <body>
   <nav class="nav-bar nav_container">
     <a href="index.html" class="nav-logo">NMC</a>
-    <ul class="nav-menu" id="myTopnav">
+    <ul class="nav-menu" id="menuList">
       <li><a href="#home" accesskey="h">Home</a></li>
       <li><a href="#services" accesskey="s" target="_self">Services</a></li>
       <li><a href="#projects" accesskey="p" target="_self">Projects</a></li>
       <li><a href="#contacts" accesskey="c" target="_self">Contact</a></li>
       <li><a href="./images/cv.pdf" class="btn btn-outline" id="btn-outline" target="download">Download CV</a></li>
     </ul>
-    <div class="hamburger"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="./images/hamburger.png" alt="hambugger icon" width="50%"></a></div>
-      </nav>
+    <div class="hamburger"><a href="#" class="icon" onclick="togglemenu()">
+      <img src="./images/hamburger.png" alt="hambugger icon" width="50%"></a>
+    </div>
+    </nav>
   <main>
     <div class="home-div" id="home">
       <div class="home-text">
@@ -40,7 +42,7 @@
 
     </div>
 
-    </div>
+    <!-- </div> -->
     
     <div class="what-section">
       <h1 class="section-head" id="services">What I do</h1>

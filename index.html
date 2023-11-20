@@ -5,88 +5,121 @@
   <title>myportfolio</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
+ <section id="header__section">
+ <header>
+  <div class="logo"><a href="index.html">NMC</a></div>
   <nav class="nav-bar nav_container">
-    <a href="index.html" class="nav-logo">NMC</a>
-    <ul class="nav-menu" id="menuList">
-      <li><a href="#home" accesskey="h">Home</a></li>
-      <li><a href="#services" accesskey="s" target="_self">Services</a></li>
-      <li><a href="#projects" accesskey="p" target="_self">Projects</a></li>
-      <li><a href="#contacts" accesskey="c" target="_self">Contact</a></li>
-      <li><a href="./images/cv.pdf" class="btn btn-outline" id="btn-outline" target="download">Download CV</a></li>
+    <ul class="nav__menu">
+      <li class="menu"><a href="#home" accesskey="h">Home</a></li>
+      <li class="menu"><a href="#services" accesskey="s" target="_self">Services</a></li>
+      <li class="menu"><a href="#projects" accesskey="p" target="_self">Projects</a></li>
+      <li class="menu"><a href="#contacts" accesskey="c" target="_self">Contact</a></li>
+      <li class="menu"><a href="./images/cv.pdf" class="cv" id="btn-outline" target="download">Download
+          CV</a></li>
     </ul>
-    <div class="hamburger"><a href="#" class="icon" onclick="togglemenu()">
-      <img src="./images/hamburger.png" alt="hambugger icon" width="50%"></a>
-    </div>
-    </nav>
-  <main>
-    <div class="home-div" id="home">
-      <div class="home-text">
-        <h3>Hello!!</h3>
-        <h2>I'm Martina Ngwuta</h2>
-        <h2 class="heading2">Front-End Web Developer &amp; Tutor.</h2>
-        <p class="about">I help individuals and business owners to create user friendly and responsive websites that
-          allows their businesses thrive in the present world putting into consideration, the users painpoints(problems)
-        </p>
+  </nav>
 
-        <button type="submit" class="btn work-button">My work</button>
-
+  <nav class="mobile__menu" id="mobile">
+    <ul class="mobile__menu__ul">
+      <li class="menu-m"><a href="#home" accesskey="h">Home</a></li>
+      <li class="menu-m"><a href="#services" accesskey="s" target="_self">Services</a></li>
+      <li class="menu-m"><a href="#projects" accesskey="p" target="_self">Projects</a></li>
+      <li class="menu-m"><a href="#contacts" accesskey="c" target="_self">Contact</a></li>
+      <li class="menu-m"><a href="./images/cv.pdf" class="cv" id="btn-outline" target="download">Download
+          CV</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="hamburger"><span>&#9776;</span></div>
+ </header>
+ </section>
+ <!--- Header section ends here-->
+  <section id="about">
+      <div class="profile">
+        <div class="profile__info">
+          <div class="profile__info-size">
+            <h3 id="hello">Hello!!</h3>
+            <h2 class="name name-large">I'm Martina Ngwuta</h2>
+            <h2 class="role">Front-End Web Developer &amp; Tutor.</h2>
+            <p class="profile__text">I help individuals and business owners to create user friendly and responsive websites that
+              allows their businesses thrive in the present world putting into consideration, the users painpoints(problems)
+            </p>
+            
+            <button type="submit" class="profile__cta">Hire me</button>
+          </div>
+      
+        </div>
+        <div class="profile__image">
+          <img src="./images/fbd.jpg"  alt="profile picture of martinangwuta" class="profile-pix">
+        </div>
+      
       </div>
-      <div class="profile-image">
-        <img src="./images/fbd.jpg" class="home-image" alt="profile picture of martinangwuta" id="profile-pix">
-      </div>
+  </section>
 
-    </div>
+  <!--- about section ends here-->
 
     <!-- </div> -->
     
-    <div class="what-section">
-      <h1 class="section-head" id="services">What I do</h1>
-      <div class="what-i-do">
-        <div class="what-item">
-          <h1 class="what-heading">Front-End Development</h1>
-          <p class="what-paragraph">I develop User friendly and Responsive web interfaces that solve users problems and
+ <section id="works">
+    <div class="works">
+      <h2 class="works__title">What I do</h2>
+      <div class="works__services">
+        <div class="services">
+          <h2 class="services__title">Front-End Development</h2>
+          <p class="services__text">I develop User friendly and Responsive web interfaces that solve users problems and
             meets their needs</p>
         </div>
-        <div class="what-item">
-          <h1 class="what-heading">Tech Integration</h1>
-          <p class="what-paragraph">I talk to students and schools about Tech and how that canpromote effective learning</p>
+        <div class="services">
+          <h1 class="services__title">Tech Integration</h1>
+          <p class="services__text">I talk to students and schools about Tech and how that canpromote effective learning</p>
         </div>
-        <div class="what-item">
-          <h1 class="what-heading">TUTORING</h1>
-          <p class="what-paragraph">I teach coding and other subjects with learners needs and learning style in mind
+        <div class="services">
+          <h1 class="services__title">TUTORING</h1>
+          <p class="services__text">I teach coding and other subjects with learners needs and learning style in mind
             while ensuringchanges are seen in the learners</p>
         </div>
       </div>
     </div>
+ </section>
+ <!--works section ends here-->
     <section id="skills" class="skills section-bg">
+      <h1 class="progress__bar__title">My Skills</h1>
       <div class="skill">
-        <h1 class="progress-bar-h1">My Skills</h1>
+        
         <li>
           <h3>html</h3>
-          <span class="bar"><span class="html"></span>
+          <span class="skill__bar"><span class="html"></span>
+          </span>
         </li>
         <li>
           <h3>css</h3>
-          <span class="bar"><span class="css"></span>
+          <span class="skill__bar"><span class="css"></span>
+          </span>
         </li>
         <li>
           <h3>JavaScript</h3>
-          <span class="bar"><span class="js"></span>
+          <span class="skill__bar"><span class="js"></span>
+          </span>
         </li>
         <li>
           <h3>React</h3>
-          <span class="bar"><span class="react"></span>
+          <span class="skill__bar"><span class="react"></span>
+          </span>
         </li>
       </div>
-    </section><!-- End Skills Section -->
-    <section class="project" id="projects">
-      <h1 class="section-head">Recent Work</h1>
-      <div class="project-section">
+    </section>
+    <!--Skills Section  ends here-->
+    <section class="projects" id="projects">
+      <h1 class="projects__title">Recent Work</h1>
+      <div class="project__wrapper">
 
         <div class="project-1"><img src="./images/balancesheet.JPG" width="300px" height="300px" class="project-image"></div>
         <div class="project-1"><img src="./images/surveyform.JPG" width="300px" height="300px" class="project-image"></div>
@@ -94,14 +127,18 @@
 
       </div>
     </section>
+      <!--projects Section  ends here-->
 
-    <footer>
-      <h1 class="section-head" id="contacts" color="white">Contact Me</h1>
-      <div class="contact-section">
-        <div class="contact-item">
-          <label>Email: martinangwta@gmail.com</label><br><br>
-          <label>Phone: +2349034009584</label><br><br>
-          <label>Address: Bariga, Lagos Nigeria</label><br><br>
+    <footer >
+     <div class="contacts">
+
+    <div class="contacts__details">
+      <h3 class="contacts__details__title" id="contacts">Contact Me</h3>
+      <div class="contact-info">
+        <div class="contacts__info__text">
+          <p>Email: martinangwta@gmail.com</p>
+          <p>Phone: +2349034009584</p>
+          <p>Address: Bariga, Lagos Nigeria</p>
           <div class="socials-icons">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-linkedin"></a>
@@ -109,10 +146,11 @@
             <a href="#" class="fa fa-github"></a>
           </div>
         </div>
+      </div>
+    </div>
+      <div class="contacts__form">
 
-        <div class="contact-item card">
-
-          < method="post">
+          <form method="post">
             <div class="form-control">
               <input type="text" placeholder="enter fullname" class="input-form">
             </div>
@@ -132,15 +170,11 @@
         </div>
       </div>
 
-      </div>
-      </div>
+   
     </footer>
-    <div class="handles-item">Developed by Ngwuta Martina C</div>
-  </main>
-  <script>
-
-
-  </script>
+    <div class="copyright"> &copy; 2023 | Developed by Ngwuta Martina</div>
+   
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,16 @@
+
+var hamburger = document.getElementById('hamburger')
+console.log(hamburger)
+const mobileMenu = document.getElementById('mobile')
+hamburger.addEventListener('click', () => {
+  if(mobileMenu.style.display == 'block'){
+    mobileMenu.style.display = 'none'
+  
+  }else {
+    mobileMenu.style.display = 'block'
+  }
+  
+})
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 /*function myFunction() {
   var x = document.getElementsByClass("nav-menu");
@@ -22,3 +35,5 @@ menuList.style.maxHeight = "0px"
 function togglemenu(){
   if ()
 }
+*/
+

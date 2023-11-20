@@ -1,13 +1,18 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap'); */
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+    font-family: 'Quicksand', sans-serif;
 }
-
-html {
+html  {
   font-size: 62.5%;
   /*overflow-x: hidden;*/
+}
+
+html * {
+font-family: 'Quicksand', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 a {
@@ -16,8 +21,7 @@ a {
 }
 
 body {
-font-family: 'Barlow', sans-serif;
-  font-family: 'Titillium Web', sans-serif;
+/* font-family: 'Quicksand', sans-serif; */
   background-color: #fff;
   font-size: 1rem;
   margin: 0px;
@@ -26,16 +30,15 @@ font-family: 'Barlow', sans-serif;
 
 #header__section {
   width: 100%;
-  padding: 25px 8%;
+  padding: 3rem 8%;
   background-color: rgb(59, 108, 214);
   font-size: 1.6rem;
-  height: 80px;
+  height: 90px;
   position: relative;
 }
 
 header {
   display: flex;
-  font-family: Barlow;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -45,7 +48,10 @@ header {
 .logo a {
   color: white;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .nav__menu {
@@ -60,6 +66,7 @@ header {
   right: 0;
   height: 100dvh;
   background-color:  rgb(59, 108, 214);
+  opacity: .7;
   padding: 1rem;
 
 }
@@ -87,6 +94,7 @@ header {
   display: block;
   font-size: 3.5rem;
   color: white;
+  margin-top: -1.5rem;
 }
 
 
@@ -95,16 +103,17 @@ header {
 
 #about, #works, #projects {
   padding: 25px 8%;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
 }
 
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   flex-wrap: wrap-reverse;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .profile__info {
@@ -112,29 +121,30 @@ header {
   text-align: center;
 }
 
-/* .profile__info-size{
-          text-align: center;
-        } */
-
 #hello {
   font-size: large;
+  color: rgba(236, 0, 140, 1)
 }
 
 .name {
-  color: blue;
-  font-size: 2.7rem;
-  margin-top: 2.5rem;
+  color: rgb(59, 108, 214);
+  font-size: 3rem;
+  font-weight:bolder;
+  margin-top: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+  
 }
 
 .role {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   margin-bottom: 2.5rem;
+font-family: 'Advent Pro', sans-serif;
 
 }
 
 .profile__text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: justify;
   font-weight: medium;
   line-height: 2.2rem;
@@ -142,12 +152,12 @@ header {
 }
 
 .profile__cta {
-
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-style: italic;
   border: none;
-  padding: 1rem 2rem;
+  padding: .7rem 3rem;
   border-radius: 25px;
-  margin: 2.5rem 0;
+  margin: 3.5rem 0;
   background-color: rgb(59, 108, 214);
   color: #fff;
 
@@ -155,7 +165,7 @@ header {
 
 .profile__cta:hover {
   background-color: #007bb5;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .profile__image {
@@ -168,17 +178,17 @@ header {
 .profile-pix {
   width: 100%;
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
   
     .works__title {
       text-align: center;
+      text-decoration: underline;
       font-size: 2.5rem;
       color: rgba(236, 0, 140, 1);
-      margin-top: 2rem;
       margin-bottom: 1rem;
     }
   
@@ -191,12 +201,11 @@ header {
   
     .services {
       background-color: rgb(150, 180, 245);
+      border-radius: 5px;
       color: #333;
       text-align: center;
-      box-shadow: 5em;
-      padding: 1rem 1rem;
-      margin: 1rem 1rem;
-      height: 18rem;
+      padding: 1rem;
+      margin: 1rem;
       max-width: 100%;
     }
 .services__title {
@@ -207,9 +216,9 @@ header {
 }
 
 .services__text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 
@@ -231,7 +240,8 @@ header {
   margin: 3rem 0;
 }
 .skill{
-  margin: 3rem 0;
+  margin: 3rem auto;
+  width: 80%;
 }
 .skill li {
   list-style: none;
@@ -323,18 +333,26 @@ header {
 
 .projects__title {
   text-align: center;
+  text-decoration: underline;
   margin: 1rem 0;
   font-weight: bolder;
   font-size: 3rem;
-  color: rgb(59, 108, 214);
+  color:rgba(236, 0, 140, 1);
 }
 
 .project__wrapper {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 5rem;
+}
+.project{
+padding: .5rem;
+border-radius: 5px;
+}
+.project:hover{
+  transform: scale(1.1);
 }
 
 footer {
@@ -397,23 +415,21 @@ textarea {
   border-color: grey;
 }
 
-textarea {
-  border: none;
-}
 
-#message {
-  width: 539px;
-  margin-left: 5px;
-}
 
-.contact-button {
-  padding: 15px 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.contact__form__btn {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0;
   background-color: rgb(59, 108, 214);
-  color: white;
-  border-radius: 4px;
+  color: #fff;
+  border-radius: 5px;
   border: none;
+} 
+.contact__form__btn:hover {
+  background-color:rgba(236, 0, 140, 1);
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .fa-facebook {
@@ -443,6 +459,8 @@ textarea {
 
 .socials-icons {
   margin-left: 10px;
+  display: flex;
+  gap: 1.4rem;
 }
 
 .fa {
@@ -460,7 +478,7 @@ textarea {
 .copyright{
   background-color: #1b346b;
   padding: 3rem 0 2rem 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
 }
@@ -491,8 +509,12 @@ textarea {
     }
   .cv{
     border: 1px solid white;
-    padding: 1rem 2rem;
+    padding: .7rem 2rem;
     border-radius:50px;
+  }
+  .cv:hover{
+    background-color: white;
+    color: rgb(59, 108, 214);
   }
   .menu a:hover {
     text-decoration: underline;
@@ -505,6 +527,9 @@ textarea {
 
   .profile {
     justify-content: space-between;
+    margin: 4rem 0;
+    gap: 1rem;
+
     /* flex-wrap: wrap-reverse; */
 
   }
@@ -515,27 +540,36 @@ textarea {
   }
 
   .name {
-    font-size: 5rem;
+    margin-top: -1rem;
+    font-size: 8rem;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
   }
 
   .role {
     font-size: 2rem;
     margin-bottom: 1rem;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
   }
 
   .profile__text {
-    /* max-width: 45%; */
-    font-size: 1.7rem;
-    /* text-align: justify; */
+    max-width: 80%;
+    font-size: 1.8rem;
+    text-align: justify;
     font-weight: medium;
     line-height: 2.2rem;
 
   }
   .profile__image {
-    max-width: 45%;
+    max-width: 35%;
+    
 
   }
+    .profile-pix {
+      width: 300px;
+      height: 300px;
+
+    }
      .works__services {
        display: flex;
        justify-content: space-between;
@@ -550,7 +584,7 @@ textarea {
        box-shadow: 5em;
        padding: 1rem 1rem;
        margin: 1rem 1rem;
-       height: 15rem;
+       min-height: 15rem;
        max-width: 30%;
      }
 

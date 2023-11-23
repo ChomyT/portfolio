@@ -478,7 +478,7 @@ textarea {
 }
 
 .fa {
-  padding: 5px;
+  padding: 10px;
   height: 20px;
   width: 50px;
   text-align: center;
@@ -505,118 +505,6 @@ textarea {
     scroll-behavior: smooth;
   }
 
-<<<<<<< HEAD
-
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/*for tablets*/
-@media only screen and (max-width: 768px) {
-  body{
-    background: yellow;
-    overflow-x: hidden;
-    position: fixed;
-  }
-  .home-div{
-    flex-direction:column;
-    flex-wrap: wrap;
-    margin-bottom: 0.5%;
-    gap: 10%;
-  }
-  .home-image{
-    width: 100%;
-    align-items: center;
-    margin-top: 0.5%;
-    
-  }
-  .home-text{
-    width:100%;
-    text-align:center;
-    margin: 0.5% auto; 
-    font-size: 1rem;
-  }
-  .what-i-do {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5%;
-   
-        }
-   .what-item {
-    width: 100%;
-    margin: 1.0% auto;
-    align-items: center;
-              
-        }
-        .skill{
-          width: 100%;
-        }
-        .project-section {
-          flex-direction: column;
-          justify-content: space-evenly;
-          margin-top: 1rem;
-          margin-top: 5rem;
-        }
-        .project-1{
-          width: 100%;
-          margin-top:2%;
-        }
-        .project-image{
-          width: 100%;
-        }
-        .contact-section{
-          flex-wrap: wrap;
-          flex-direction: column;
-          width: 100%;
-          
-        }
-        .contact-item{
-          width: 100%;
-                  }
-                  label{
-                    text-align: center;
-                  }
-                  form{
-                    margin: 1% auto;
-                    width: 100%;
-                  }
-                  .handles-item {
-                    color: black;
-                    text-align: center;
-                    margin-top: 7rem auto;
-                    font-weight: bold;
-                    font-size: 1.6rem;
-                                      }
-                                      .card {
-                                        width: 100%;
-                                        margin: 5rem auto;
-                                      }
-                                      .nav-menu {
-                                        display: block;
-                                        margin-bottom: 10px;
-                                        background-color: #333;
-                                        }
-                                        nav{
-                                          flex: 1;
-                                          text-align: right;
-                                        }
-                                        nav ul{
-                                          width: 100%;
-                                          height: 350%;
-                                          background:#333;
-                                          position: absolute;
-                                          top: 50px;
-                                          right: 0;
-                                          z-index: 2;
-                                        }
-}
-
-@media only screen and (max-width: 480px) {
-  .about{
-    width: 100%;
-  }
-=======
   * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -733,5 +621,4 @@ textarea {
     width: 55%;
   }
 
->>>>>>> 4888fd80456e2044ec936d7ec9d924a1f54ebfef
 }

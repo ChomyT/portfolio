@@ -32,8 +32,8 @@ body {
   padding: 3rem 8%;
   background-color: rgb(59, 108, 214);
   font-size: 1.6rem;
-  height: 90px;
-  position: relative;
+  height: 80px;
+  position: fixed;
 }
 
 header {
@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
+  }
 
 .logo a {
   color: white;
@@ -97,6 +97,7 @@ header {
   margin-top: -1.5rem;
 }
 
+
 #about,
 #works,
 #projects {
@@ -123,6 +124,7 @@ header {
   font-size: large;
   color: rgba(236, 0, 140, 1);
   margin-left: 0.5rem;
+  margin-top: 5rem;
 }
 
 .name {

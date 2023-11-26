@@ -154,8 +154,8 @@ header {
   font-size: 1.8rem;
   font-style: italic;
   border: none;
-  padding: .7rem 3rem;
-  border-radius: 25px;
+  padding: .9rem 3rem;
+  border-radius: 10px;
   margin: 3.5rem 0;
   background-color: rgb(59, 108, 214);
   color: #fff;
@@ -416,12 +416,9 @@ textarea {
   border: 0;
   border-bottom: 1px solid#b4becb;
 }
-.hidden{
-  visibility: none;
-  height: 0;
+input, textarea:hover{
+  outline:none;
 }
-  
-
 
 #subject {
   width: 477px;
@@ -450,7 +447,7 @@ textarea {
 .fa-facebook {
   background-color: #3b5998;
   color: white;
-}
+ }
 
 .fa-twitter {
   background-color: #3b5998;
@@ -470,7 +467,7 @@ textarea {
 .fa-github {
   background-color: black;
   color: #fff;
-}
+ }
 
 .socials-icons {
   margin-left: 10px;
@@ -478,16 +475,14 @@ textarea {
   gap: 1.4rem;
 }
 
-.fa {
-  padding: 15px;
-  height: 30px;
+.fa{
+  height: 20px;
   width: 20px;
   text-align: center;
-  text-decoration: none;
   margin: 0.2px 1px;
-  font-size: 20px;
+  font-size: 1rem;
+  padding:  2rem 2rem;
   }
-
 
 .copyright {
   background-color: #1b346b;
@@ -496,9 +491,6 @@ textarea {
   color: white;
   text-align: center;
 }
-
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   * {

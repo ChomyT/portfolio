@@ -141,7 +141,7 @@
           <p>Address: Bariga, Lagos Nigeria</p>
           <div class="socials-icons">
             <a href="https://www.facebook.com/tina.ngwuta.chyomah" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/martina-ngwuta-6ab220197/" class="fa fa-linkedin"></a>
+            <a hregit f="https://www.linkedin.com/in/martina-ngwuta-6ab220197/" class="fa fa-linkedin"></a>
             <a href="https://github.com/ChomyT" class="fa fa-github"></a>
           </div>
         </div>
@@ -153,16 +153,19 @@
           enctype="application/x-www-form-urlencoded">
           <input type="hidden" name="form-name" value="portfolio"/>
             <div class="form-control">
-              <input type="text" placeholder="enter fullname" class="input-form">
+              <input type="text" placeholder="enter fullname" class="input-form" name="fullname">
             </div>
             <div class="form-control">
-              <input type="text" placeholder="enter address" class="input-form">
+              <input type="text" placeholder="enter address" class="input-form" name="address">
             </div>
             <div class="form-control">
-              <input type="text" placeholder="subject" class="input-form">
+              <input type="text" placeholder="subject" class="input-form" name="subject">
             </div>
             <div class="form-control">
-              <input type="text" placeholder="enter message" class="input-form">
+              <input type="text" placeholder="enter message" class="input-form" name="message">
+            </div>
+            <div class="form-control">
+              <div data-netlify-recaptcha="true"></div>
             </div>
             <div>
             <button type="submit" class="contact__form__btn">Send message</button>

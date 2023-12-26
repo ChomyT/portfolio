@@ -503,6 +503,30 @@ input, textarea:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
+/*Mobile Animation*/
+@keyframes slideInFromTop{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.profile__image{
+  animation: slideInFromTop 1s ease-in;
+}
+.profile__info{
+  animation: slideInFromBottom 1s ease-in
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -616,3 +640,30 @@ input, textarea:hover{
   }
 
 }
+/* Desktop Animations*/
+@keyframes slideInFromLeft{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+.profile__image{
+    animation: slideInFromRight 1s ease-in;
+  }
+
+  .profile__info{
+    animation: slideInFromLeft 1s ease;
+  }

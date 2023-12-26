@@ -528,6 +528,8 @@ input, textarea:hover{
   animation: slideInFromBottom 1s ease-in
 }
 
+
+
 @media only screen and (min-width: 768px) {
 
   .nav__menu {
@@ -651,7 +653,7 @@ input, textarea:hover{
 }
 
 @keyframes slideInFromRight{
-  0%{
+    0%{
     transform: translateX(100%);
   }
   100%{

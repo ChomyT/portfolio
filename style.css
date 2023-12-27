@@ -182,6 +182,7 @@ header {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
+  margin-top: 5rem
 }
 
 
@@ -500,7 +501,7 @@ input, textarea:hover{
   }
 
   * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
 /*Mobile Animation*/
@@ -527,7 +528,18 @@ input, textarea:hover{
 .profile__info{
   animation: slideInFromBottom 1s ease-in
 }
-
+.services__text{
+  animation:slideInFromRight 1s ease-in
+}
+.services__title{
+  animation:slideInFromLeft 1s ease-in
+}
+.contacts__info__text{
+  animation: slideInFromTop 1s ease-in
+}
+.contacts__form{
+  animation: slideInFromBottom 1s ease-in
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -600,14 +612,13 @@ input, textarea:hover{
 
   .profile__image {
     max-width: 35%;
-
-
+  
   }
 
   .profile-pix {
     width: 300px;
     height: 300px;
-
+    
   }
 
   .works__services {
